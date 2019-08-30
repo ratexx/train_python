@@ -18,8 +18,8 @@ frame = ttk.Frame(root)
 frame.pack()
 
 # First Row
-var_left = StringVar()# String Mutable แก้ได้
-entry_left = ttk.Entry(frame, width=8, textvariable=var_left) #Entry = textbox
+var_left = StringVar()
+entry_left = ttk.Entry(frame, width=8, textvariable=var_left)
 entry_left.grid(row=0, column=0)
 entry_left.bind('<Return>', on_click_btn)
 
@@ -40,7 +40,7 @@ label_result.grid(row=0, column=4)
 
 # Second Row
 btn_add = ttk.Button(frame, text="Add", command=on_click_btn)
-btn_add.grid(row=1, column=2, columnspan=3, sticky="E") #sticky E = East เป็นทิศ
+btn_add.grid(row=1, column=2, columnspan=3, sticky="E")
 
 # Font and Padding
 nametofont("TkDefaultFont").configure(size=24)

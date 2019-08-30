@@ -67,7 +67,7 @@ class Employee(ttk.Frame):
 
 
 # Main
-connect = pymysql.connect('localhost', 'root', '123', 'mypython',
+connect = pymysql.connect('172.16.0.68', 'root', '123', 'mypython',
                           charset='utf8',
                           cursorclass=pymysql.cursors.DictCursor)
 
