@@ -37,7 +37,7 @@ class ChatRoomSocket(ChatRoom):
 
 # Main
 server = socket()
-ip = "127.0.0.1"
+ip = "172.16.0.68"
 port = 1234
 
 try:
@@ -50,7 +50,7 @@ except OSError:
     socket = server
     socket.connect((ip, port))
 
-    name = "Client"
+    name = "นี่อาจารย์นะ"
 
 root = Tk()
 root.title("ChatRoom - " + name)

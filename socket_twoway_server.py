@@ -2,7 +2,7 @@ from socket import *
 
 server = socket()
 
-server.bind(("127.0.0.1", 1234))
+server.bind(("172.16.0.142", 8888))
 server.listen(10)
 
 print("Server is ready")

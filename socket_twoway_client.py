@@ -2,7 +2,7 @@ from socket import *
 
 socket = socket()
 
-socket.connect(("127.0.0.1", 1234))
+socket.connect(("172.16.0.167", 4080))
 
 msg = input('> ')
 
